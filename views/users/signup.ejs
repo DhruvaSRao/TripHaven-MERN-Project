@@ -1,0 +1,34 @@
+<% layout("/layouts/boilerplate") %>
+
+<div class="row mt-3">
+    <h1 class="col-6 offset-3">Signup on TripHaven</h1>
+    <div class="col-6 offset-3">
+        <form action="/signup" method="POST" novalidate class="needs-validation">
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <br>
+                <input name="username" id="username" type="text" class="form-control" required>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please enter a valid Username</div>
+                <br>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <br>
+                <input name="email" id="email" type="email" class="form-control" required>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please enter a valid Email</div>
+                <br>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <br>
+                <input name="password" id="password" type="password" class="form-control" required>
+                <div class="valid-feedback">Strong!</div>
+                <div class="invalid-feedback">Please enter a valid Username</div>
+                <br>
+            </div>
+            <button class="btn btn-success">SignUp</button>
+        </form>
+    </div>
+</div>
